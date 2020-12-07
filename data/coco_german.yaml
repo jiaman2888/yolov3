@@ -1,0 +1,20 @@
+#German dataset
+# Train command: python train.py --data coco.yaml
+# Default dataset location is next to /yolov3:
+#   /parent_folder
+#     /coco
+#     /yolov3
+
+
+# download command/URL (optional)
+#download: https://github.com/ultralytics/yolov5/releases/download/v1.0/coco128.zip
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ../yolov3/coco/images/train/  # 381 images
+val: ../yolov3/coco/images/val/  # 127 images
+
+# number of classes
+nc: 43
+
+# class names
+names: ['speed limit 20 (prohibitory)', 'speed limit 30 (prohibitory)', 'speed limit 50 (prohibitory)', 'speed limit 60 (prohibitory)', 'speed limit 70 (prohibitory)', 'speed limit 80 (prohibitory)', 'restriction ends 80 (other)', 'speed limit 100 (prohibitory)', 'speed limit 120 (prohibitory)', 'no overtaking (prohibitory)', 'no overtaking (trucks) (prohibitory)', 'priority at next intersection (danger)', 'priority road (other)', 'give way (other)', 'stop (other)', 'no traffic both ways (prohibitory)', 'no trucks (prohibitory)', 'no entry (other)', 'danger (danger)', 'bend left (danger)', 'bend right (danger)', 'bend (danger)', 'uneven road (danger)', 'slippery road (danger)', 'road narrows (danger)', 'construction (danger)', 'traffic signal (danger)', 'pedestrian crossing (danger)', 'school crossing (danger)', 'cycles crossing (danger)', 'snow (danger)', 'animals (danger)', 'restriction ends (other)', 'go right (mandatory)', 'go left (mandatory)', 'go straight (mandatory)', 'go right or straight (mandatory)', 'go left or straight (mandatory)', 'keep right (mandatory)', 'keep left (mandatory)', 'roundabout (mandatory)', 'restriction ends (overtaking) (other)', 'restriction ends (overtaking (trucks)) (other)']
